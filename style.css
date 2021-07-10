@@ -1,0 +1,237 @@
+body{    
+    padding: 50px;
+    font-family: Jost, 'Times New Roman', Times, serif;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    list-style: none;
+    font-weight: 400;
+    display: flex;
+}
+nav ul li{
+    margin-right: 30px;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.intro-section{
+    background: hsl(11deg, 73%, 66%) url(images/bg-pattern-hero-home.svg) top right no-repeat;
+    /* padding: 50px 80px; */
+    padding-left: 100px;
+    padding-top: 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    color: #fff;
+    max-height: 550px;
+    overflow: hidden;
+    /* align-items: center; */
+}
+.intro-section #award-winning{
+    font-size: 40px;
+    font-weight: bold;
+}
+.home-page-buttons{
+    font-family: Jost, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    transition: 300ms;
+}
+.home-page-buttons:hover{
+    color: #fff;
+    background: #ffad9b;
+}
+.intro-section #intro-mobile-image{
+    position: relative;
+    top: -120px;
+    right: -70px;
+}
+/*animation for background of projects section*/
+@keyframes projects {
+    0% {
+        background: linear-gradient(135deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4) ), url(images/image-web-design-large.jpg) no-repeat;
+    }
+    100%{
+        background: linear-gradient(135deg,hsla(11deg, 73%, 66%, 0.5),hsla(11deg, 73%, 66%, 0.5) ), url(images/image-web-design-large.jpg) no-repeat ;
+    }
+}
+.portfolio-projects-section{
+    color: #fff;
+    display: flex;
+    margin-top: 150px;
+}
+.portfolio-projects-section #web-design-projects{
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4) ), url(images/image-web-design-large.jpg) no-repeat;
+    width: 50%;
+    height: 90vh;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* transition: background-color 0.1s; */
+}
+.portfolio-projects-section #web-design-projects img{
+    transition: transform 0.3s;
+}
+.portfolio-projects-section #web-design-projects:hover img{
+    transform: translateX(10px);
+}
+/* .portfolio-projects-section #web-design-projects::before{
+    background-image: linear-gradient(135deg,hsla(11deg, 73%, 66%, 0.5),hsla(11deg, 73%, 66%, 0.5) );
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+} */
+.portfolio-projects-section .remaining-projects{
+    width: 50%;
+    height: 90vh;
+    margin-left: 10px;
+}
+.portfolio-projects-section #app-design-projects{
+    background:linear-gradient(135deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4) ), url(images/image-app-design.jpg) no-repeat;
+    height: 48%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.portfolio-projects-section #app-design-projects img{
+    transition: transform 0.3s;
+}
+.portfolio-projects-section #app-design-projects:hover img{
+    transform: translateX(10px);
+}
+.portfolio-projects-section #graphic-design-projects{
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4) ), url(images/image-graphic-design.jpg) no-repeat;
+    border-radius: 20px;
+    height: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-projects-section #graphic-design-projects img{
+    transition: transform 0.3s;
+}
+.portfolio-projects-section #graphic-design-projects:hover img{
+    transform: translateX(10px);
+}
+.portfolio-projects-section h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.portfolio-projects-section a{
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.about-us{
+    display: flex;
+    margin-top: 150px;
+    text-align: center;
+    /* background: url(images/bg-pattern-leaf.svg) no-repeat; */
+}
+/* .about-us::after{
+    content: "abd"; 
+    display: block;
+    background: url(images/bg-pattern-leaf.svg) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+} */
+.about-us img{
+    background-image: url(images/bg-pattern-small-circle.svg);
+}
+.about-us h3{
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.about-us .passionate,.about-us .resourceful, .about-us .friendly {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+footer{
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+.pre-footer{
+    display: flex;
+    background-color: hsl(11deg, 73%, 66%);
+    color: #fff;
+    padding: 80px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    z-index: 999;
+}
+.pre-footer .pre-footer-text{
+    width: 45%;
+}
+.footer-end{
+    background-color: #000;
+    width: 83.3vw;
+    transform: translateX(-7%);
+    padding: 100px;
+}
+.footer-logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-logo-nav .footer-menu a{
+    color: #fff;
+}
+.footer-info{
+    color: hsl(300deg, 0%, 55%);
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info a{
+    text-decoration: none;
+    color: hsl(300deg, 0%, 55%);
+}
+.footer-info a:hover{
+    text-decoration: underline;
+}
+.footer-info div{
+    width: 20%;
+}
+.footer-info ul{
+    list-style-type: none;
+    justify-self: flex-end;
+}
+.footer-info ul li{
+    display: inline;
+}
+.footer-info ul li{
+    margin-right: 10px;
+}
