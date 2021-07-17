@@ -1,3 +1,4 @@
+/* Home Page Styles */
 body{    
     padding: 50px;
     font-family: Jost, 'Times New Roman', Times, serif;
@@ -5,6 +6,7 @@ body{
     margin: 0 auto;
 }
 header{
+    /* position: sticky; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,7 +64,19 @@ nav ul li a:hover{
     top: -120px;
     right: -70px;
 }
-/*animation for background of projects section*/
+.intro-section::after{
+    content: "";
+    display: block;
+    background: url(images/bg-pattern-leaf.svg) no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    left: 0px;
+    top: 500px;
+    /* transform: rotate(180deg); */
+    z-index: -999;
+} 
+/*animation for background of projects section
 @keyframes projects {
     0% {
         background: linear-gradient(135deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4) ), url(images/image-web-design-large.jpg) no-repeat;
@@ -86,7 +100,7 @@ nav ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* transition: background-color 0.1s; */
+    /* transition: background-color 0.1s;
 }
 .portfolio-projects-section #web-design-projects img{
     transition: transform 0.3s;
@@ -94,7 +108,7 @@ nav ul li a:hover{
 .portfolio-projects-section #web-design-projects:hover img{
     transform: translateX(10px);
 }
-/* .portfolio-projects-section #web-design-projects::before{
+.portfolio-projects-section #web-design-projects::before{
     background-image: linear-gradient(135deg,hsla(11deg, 73%, 66%, 0.5),hsla(11deg, 73%, 66%, 0.5) );
     content: '';
     display: block;
@@ -103,7 +117,7 @@ nav ul li a:hover{
     left: 0px;
     width: 100%;
     height: 100%;
-} */
+}
 .portfolio-projects-section .remaining-projects{
     width: 50%;
     height: 90vh;
@@ -148,22 +162,126 @@ nav ul li a:hover{
 .portfolio-projects-section a{
     letter-spacing: 3px;
     font-weight: 400;
+}*/
+
+/* New Portfolio Projects Section Styles*/
+
+.home-portfolio-projects{
+    margin-top: 150px;
+    display: flex;
 }
+.web-design-portfolio-projects{
+    position: relative;
+    margin-right: 25px;
+}
+.web-design-portfolio-projects img{
+    border-radius: 15px;
+    display: block;
+}
+.web-design-portfolio-projects h1{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.web-design-portfolio-projects a{
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.web-design-portfolio-projects .projects-right-arrow{
+    transition: transform 0.3s;
+    display: inline;
+}
+.web-design-portfolio-projects:hover .projects-right-arrow{
+    transform: translateX(10px);
+}
+.projects-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+.web-design-portfolio-projects:hover .projects-overlay{
+    background-color: hsla(11deg, 73%, 66%, 0.5);
+}
+.app-design-portfolio-projects, .graphic-design-portfolio-projects{
+    position: relative;
+}
+.app-design-portfolio-projects img, .graphic-design-portfolio-projects img{
+    border-radius: 15px;
+    display: block;
+}
+.app-design-portfolio-projects h1, .graphic-design-portfolio-projects h1{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.graphic-design-portfolio-projects h1{
+    left: 20%;
+}
+.app-design-portfolio-projects a, .graphic-design-portfolio-projects a{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.graphic-design-portfolio-projects{
+    margin-top: 25px;
+}
+.app-design-portfolio-projects .projects-right-arrow, .graphic-design-portfolio-projects .projects-right-arrow{
+    transition: transform 0.3s;
+    display: inline;
+}
+.app-design-portfolio-projects:hover .projects-right-arrow, .graphic-design-portfolio-projects:hover .projects-right-arrow{
+    transform: translateX(10px);
+}
+.app-design-portfolio-projects:hover .projects-overlay{
+    background-color: hsla(11deg, 73%, 66%, 0.5);
+}
+.graphic-design-portfolio-projects:hover .projects-overlay{
+    background-color: hsla(11deg, 73%, 66%, 0.5);
+}
+
+/* End of New Portfolio Projects Section Styles*/
+
 .about-us{
     display: flex;
     margin-top: 150px;
     text-align: center;
-    /* background: url(images/bg-pattern-leaf.svg) no-repeat; */
+    position: relative;
 }
-/* .about-us::after{
-    content: "abd"; 
+.about-us::after{
+    content: ""; 
     display: block;
     background: url(images/bg-pattern-leaf.svg) no-repeat;
     position: absolute;
     width: 100%;
+    height: 200%;
+    left: 85px;
+    top: -60px;
+    transform: rotate(180deg);
+    z-index: -999;
+} 
+/* .about-us .background-pattern{
+    background: url(images/bg-pattern-leaf.svg) no-repeat;
+    position: absolute;
+    width: 100%;
     height: 100%;
-    left: 0px;
-    top: 0px;
+    z-index: -999;
 } */
 .about-us img{
     background-image: url(images/bg-pattern-small-circle.svg);
@@ -235,3 +353,244 @@ footer{
 .footer-info ul li{
     margin-right: 10px;
 }
+/*End of Home Page Styles*/
+
+/* About Us Page Styles */
+
+.about-us-intro{
+    display: flex;
+    background: #e88069;
+    color: #fff;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.about-us-intro-text{
+    padding: 80px;
+}
+.about-us-intro-text h1{
+    font-size: 50px;
+}
+.about-us-intro img{
+    border-radius: 0px 15px 15px 0px;
+}
+.about-us-talent{
+    margin-top: 150px;
+    display: flex;
+    background: #fdf3f0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.about-us-talent-text{
+    padding: 80px;
+}
+.about-us-talent-text h1{
+    font-size: 40px;
+    color: #e88069;
+}
+.about-us-talent img{
+    border-radius: 15px 0px 0px 15px;
+}
+.about-us-locations{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-us-location{
+    text-align: center;
+}
+.about-us-location h3{
+    letter-spacing: 5px;
+}
+.about-us-location img{
+    background: url(images/bg-pattern-small-circle.svg);
+}
+.about-us-location button{
+    font-family: Jost, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background: #e88069;
+    transition: 300ms;
+}
+.about-us-location button:hover{
+    color: #fff;
+    background: #ffad9b;
+}
+
+.about-us-real-deal{
+    margin-top: 150px;
+    display: flex;
+    background: #fdf3f0;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center; 
+}
+.about-us-real-deal-text{
+    padding: 80px;
+}
+.about-us-real-deal h1{
+    font-size: 40px;
+    color: #e88069;
+}
+.about-us-real-deal img{
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* End of About Us Page Styles */
+
+/* Contact Us Page Styles*/
+.contact-us-intro{
+    display: flex;
+    background-color: #e88069;
+    border-radius: 15px;
+    padding: 50px 100px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contact-us-intro h1{
+    font-size: 50px;
+}
+.contact-us-intro form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+.contact-us-intro-text{
+    width: 50%;
+    color: #fff;
+}
+.contact-us-intro form input, .contact-us-intro form textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #e88069;
+    color: #fff;
+    border-bottom: 2px solid;
+    padding: 20px;
+    font-family: Jost, 'Times New Roman', Times, serif;
+}
+.contact-us-intro form textarea{
+    padding: 50px 20px;
+}
+.contact-us-intro form input::placeholder,.contact-us-intro form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Jost, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.contact-us-intro form input:focus,.contact-us-intro form textarea:focus{
+    outline:none;
+}
+.contact-us-intro form input[type="submit"] {
+    width: 40%;
+    align-self: flex-end;
+    color: #000;
+    font-family: Jost, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    transition: 300ms;
+    margin-top: 30px;
+    
+}
+.contact-us-intro form input[type="submit"]:hover{
+    color: #fff;
+    background: #ffad9b;
+}
+/* End of Contact Us Page Styles*/
+
+/*  Locations Page Styles*/
+.locations-section{
+    display: flex;
+    margin-top: 30px;
+}
+
+.locations-section img{
+    border-radius: 15px;
+}
+.locations-text{
+    padding: 50px 80px;
+    background-color: #fdf3f0;
+    margin-right: 30px;
+    width: 70%;
+    border-radius: 15px;
+}
+.locations-text:nth-child(2){
+    margin-right: 0px;
+    margin-left: 30px;
+}
+.locations-text h1{
+    font-size: 40px;
+    color: #e7816b;
+}
+.locations-text-info{
+    display: flex;
+}
+.locations-text-info-address{
+    margin-right: 80px;
+}
+.locations-text-info-label{
+    font-weight: bold;
+}
+/* End of Locations Us Page Styles*/
+
+/* Styles for Design Pages i.e. Web Design, App Design, Graphic Design */
+
+.project-design-intro{
+    background: hsl(11deg, 73%, 66%) url(images/bg-pattern-call-to-action.svg) no-repeat;
+    background-position: 150px -150px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+.project-design-intro h1{
+    font-size: 45px;
+}
+.all-projects{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* align-items: space-between; */
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 30px;
+}
+.all-projects .single-project{
+    width: 31.3%;
+    text-align: center;
+    background-color: #fdf3f0;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+.all-projects .single-project:hover{
+    background-color: #e7816b;
+    cursor: pointer;
+}
+.all-projects .single-project:hover h3, .all-projects .single-project:hover p{
+    color: #fff;
+}
+.all-projects .single-project img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.all-projects .single-project h3{
+    color: #e7816b;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.all-projects .single-project p{
+    padding-bottom: 20px;
+}
+
+/* End of Styles for Design Pages*/
