@@ -14,31 +14,42 @@
 </head>
 
 <body>
-    <!-- 
-        command to run for changing folder to this project in the macbook pro
-        cd desktop/"Front End Development"/"Designo-Multi-Page-Website" 
-    -->
+
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo-dark.png" width="200">
-            </a>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-dark.png" width="200">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="about-us.html"> OUR COMPANY </a> </li>
+                    <li> <a href="locations.html"> LOCATIONS </a> </li>
+                    <li> <a href="contact-us.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
+            <img src="images/hamburger-open-menu.png" class="hamburger-menu" width="30px" onclick="openMobileMenu()">
         </div>
-        <nav>
-            <ul>
-                <li> <a href="about-us.html"> OUR COMPANY </a> </li>
-                <li> <a href="locations.html"> LOCATIONS </a> </li>
-                <li> <a href="contact-us.html"> CONTACT </a> </li>
-            </ul>
-        </nav>
+        <div class="mobile-menu">
+            <img src="images/close-menu.png" class="close-menu" width="30px" onclick="closeMobileMenu()">
+            <nav>
+                <ul>
+                    <li> <a href="about-us.html"> OUR COMPANY </a> </li>
+                    <li> <a href="locations.html"> LOCATIONS </a> </li>
+                    <li> <a href="contact-us.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+
+    <main id="main">
         <section class="intro-section">
             <div>
                 <p id="award-winning">
                     Award-winning custom designs and digital branding solutions
                 </p>
-                <p>
+                <p class="award-winning-text">
                     With over 10 years in the industry, we are experienced in creating fully responsive websites, app
                     design, and engaging brand experiences. Find out more about our services.
                 </p>
@@ -51,36 +62,16 @@
             </div>
         </section>
 
-        <!-- <section class="portfolio-projects-section">
-            <div id="web-design-projects">
-                <h1>WEB DESIGN</h1>
-                <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg"> </a>
-            </div>
-            <div class="remaining-projects">
-                <div id="app-design-projects">
-                    <h1>APP DESIGN</h1>
-                    <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg"> </a>
-                </div>
-                <div id="graphic-design-projects">
-                    <h1>GRAPHIC DESIGN</h1>
-                    <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg"> </a>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Section for the copy of Projects Section -->
         <section class="home-portfolio-projects">
-            <!-- <a> -->
-                <div class="web-design-portfolio-projects" onclick="location.href='project-pages/web-design.html'">
-                    <img src="images/image-web-design-large.jpg" id="web-design-image">
-                    <div class="projects-overlay">
-                        <h1>
-                            WEB DESIGN
-                        </h1>
-                        <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg" class="projects-right-arrow"> </a>
-                    </div>
+            <div class="web-design-portfolio-projects" onclick="location.href='project-pages/web-design.html'">
+                <img src="images/image-web-design-large.jpg" id="web-design-image">
+                <div class="projects-overlay">
+                    <h1>
+                        WEB DESIGN
+                    </h1>
+                    <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg" class="projects-right-arrow"> </a>
                 </div>
-            <!-- </a> -->
+            </div>
             <div class="remaining-portofolio-projects">
                 <div class="app-design-portfolio-projects" onclick="location.href='project-pages/app-design.html'">
                     <img src="images/image-app-design.jpg">
@@ -91,7 +82,8 @@
                         <a> VIEW PROJECTS <img src="images/icon-right-arrow.svg" class="projects-right-arrow"> </a>
                     </div>
                 </div>
-                <div class="graphic-design-portfolio-projects" onclick="location.href='project-pages/graphic-design.html'">
+                <div class="graphic-design-portfolio-projects"
+                    onclick="location.href='project-pages/graphic-design.html'">
                     <img src="images/image-graphic-design.jpg">
                     <div class="projects-overlay">
                         <h1>
@@ -102,45 +94,51 @@
                 </div>
             </div>
         </section>
-        <!-- end of Projects Section -->
 
         <section class="about-us">
             <div class="passionate">
                 <img src="images/illustration-passionate.svg">
-                <h3>
-                    PASSIONATE
-                </h3>
-                <p>
-                    Each project starts with an in-depth brand research to ensure we only create products that serve a
-                    purpose. We merge art, design, and technology into exciting new solutions.
-                </p>
+                <div class="about-us-content">
+                    <h3>
+                        PASSIONATE
+                    </h3>
+                    <p>
+                        Each project starts with an in-depth brand research to ensure we only create products that serve
+                        a
+                        purpose. We merge art, design, and technology into exciting new solutions.
+                    </p>
+                </div>
             </div>
 
             <div class="resourceful">
                 <img src="images/illustration-resourceful.svg">
-                <h3>
-                    RESOURCEFUL
-                </h3>
-                <p>
-                    Everything that we do has a strategic purpose. We use an agile approach in all of our projects and
-                    value customer collaboration. It guarantees superior results that fulfill our clients’ needs.
-                </p>
+                <div class="about-us-content">
+                    <h3>
+                        RESOURCEFUL
+                    </h3>
+                    <p>
+                        Everything that we do has a strategic purpose. We use an agile approach in all of our projects
+                        and
+                        value customer collaboration. It guarantees superior results that fulfill our clients’ needs.
+                    </p>
+                </div>
             </div>
 
             <div class="friendly">
                 <img src="images/illustration-friendly.svg">
-                <h3>
-                    FRIENDLY
-                </h3>
-                <p>
-                    We are a group of enthusiastic folks who know
-                    how to put people first. Our success depends on our customers, and we strive to give them the best
-                    experience a company can provide.
-                </p>
+                <div class="about-us-content">
+                    <h3>
+                        FRIENDLY
+                    </h3>
+                    <p>
+                        We are a group of enthusiastic folks who know
+                        how to put people first. Our success depends on our customers, and we strive to give them the
+                        best
+                        experience a company can provide.
+                    </p>
+                </div>
             </div>
-            <div class="background-pattern"></div>
         </section>
-
     </main>
     <footer>
         <div class="pre-footer">
@@ -160,64 +158,67 @@
             </div>
         </div>
         <div class="footer-end">
-            <div class="footer-logo-nav">
-                <div class="logo">
-                    <img src="images/logo-light.png" width="200">
+            <div class="footer-end-content">
+                <div class="footer-logo-nav">
+                    <div class="logo">
+                        <img src="images/logo-light.png" width="200">
+                    </div>
+                    <nav>
+                        <ul class="footer-menu">
+                            <li> <a href="about-us.html"> OUR COMPANY </a> </li>
+                            <li> <a href="locations.html"> LOCATIONS </a> </li>
+                            <li> <a href="contact-us.html"> CONTACT </a> </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="footer-menu">
-                        <li> <a href="about-us.html"> OUR COMPANY </a> </li>
-                        <li> <a href="locations.html"> LOCATIONS </a> </li>
-                        <li> <a href="contact-us.html"> CONTACT </a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-info">
-                <div class="footer-address">
-                    <p>
-                        Designo Central Office<br />
-                        3886 Wellington Street<br />
-                        Toronto, Ontario M9C 3J5
-                    </p>
-                </div>
-                <div class="footer-contact-us">
-                    <p>
-                        Contact Us (Central Office)<br />
-                        P :<a href="tel:+12538638967">+1 253-863-8967</a><br />
-                        M : <a href="mailto:contact@designo.com">contact@designo.com</a>
-                    </p>
-                </div>
+                <div class="footer-info">
+                    <div class="footer-address">
+                        <p>
+                            Designo Central Office<br />
+                            3886 Wellington Street<br />
+                            Toronto, Ontario M9C 3J5
+                        </p>
+                    </div>
+                    <div class="footer-contact-us">
+                        <p>
+                            Contact Us (Central Office)<br />
+                            P :<a href="tel:+12538638967">+1 253-863-8967</a><br />
+                            M : <a href="mailto:contact@designo.com">contact@designo.com</a>
+                        </p>
+                    </div>
 
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-facebook.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-youtube.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-twitter.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-pinterest.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-instagram.svg">
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-facebook.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-youtube.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-twitter.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-pinterest.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-instagram.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
