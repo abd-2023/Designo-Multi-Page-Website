@@ -28,6 +28,17 @@
                     <li> <a href="contact-us.html"> CONTACT </a> </li>
                 </ul>
             </nav>
+            <img src="images/hamburger-open-menu.png" class="hamburger-menu" width="30px" onclick="openMobileMenu()">
+        </div>
+        <div class="mobile-menu">
+            <img src="images/close-menu.png" class="close-menu" width="30px" onclick="closeMobileMenu()">
+            <nav>
+                <ul>
+                    <li> <a href="about-us.html"> OUR COMPANY </a> </li>
+                    <li> <a href="locations.html"> LOCATIONS </a> </li>
+                    <li> <a href="contact-us.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -42,11 +53,11 @@
                     users, drop us a line.
                 </p>
             </div>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email Address">
+            <form method="GET">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email Address" required>
                 <input type="tel" placeholder="Phone">
-                <textarea placeholder="Your Message"></textarea>
+                <textarea placeholder="Your Message" required></textarea>
                 <input type="submit" value="SUBMIT">
             </form>
         </section>
@@ -75,79 +86,65 @@
         </section>
 
     </main>
-    <footer>
-        <!-- <div class="pre-footer">
-            <div class="pre-footer-text">
-                <h1>
-                    Let’s talk about your project
-                </h1>
-                <p>
-                    Ready to take it to the next level? Contact us today and find out how our expertise can help your
-                    business grow.
-                </p>
-            </div>
-            <div class="pre-footer-button">
-                <button class="home-page-buttons">
-                    GET IN TOUCH
-                </button>
-            </div>
-        </div> -->
-        <div class="footer-end">
-            <div class="footer-logo-nav">
-                <div class="logo">
-                    <img src="images/logo-light.png" width="200">
+    <footer class="contact-us-footer">
+        <div class="footer-end contact-us-footer-end">
+            <div class="footer-end-content">
+                <div class="footer-logo-nav">
+                    <div class="logo">
+                        <img src="images/logo-light.png" width="200">
+                    </div>
+                    <nav>
+                        <ul class="footer-menu">
+                            <li> <a href="about-us.html"> OUR COMPANY </a> </li>
+                            <li> <a href="locations.html"> LOCATIONS </a> </li>
+                            <li> <a href="contact-us.html"> CONTACT </a> </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="footer-menu">
-                        <li> <a href="about-us.html"> OUR COMPANY </a> </li>
-                        <li> <a href="locations.html"> LOCATIONS </a> </li>
-                        <li> <a href="contact-us.html"> CONTACT </a> </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-info">
-                <div class="footer-address">
-                    <p>
-                        Designo Central Office
-                        3886 Wellington Street
-                        Toronto, Ontario M9C 3J5
-                    </p>
-                </div>
-                <div class="footer-contact-us">
-                    <p>
-                        Contact Us (Central Office)
-                    </p>
-                    P :<a href="tel:+12538638967">+1 253-863-8967</a><br>
-                    M : <a href="mailto:contact@designo.com">contact@designo.com</a>
-                </div>
+                <div class="footer-info">
+                    <div class="footer-address">
+                        <p>
+                            Designo Central Office<br />
+                            3886 Wellington Street<br />
+                            Toronto, Ontario M9C 3J5
+                        </p>
+                    </div>
+                    <div class="footer-contact-us">
+                        <p>
+                            Contact Us (Central Office)<br />
+                            P :<a href="tel:+12538638967">+1 253-863-8967</a><br />
+                            M : <a href="mailto:contact@designo.com">contact@designo.com</a>
+                        </p>
+                    </div>
 
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-facebook.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-youtube.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-twitter.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-pinterest.svg">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/icon-instagram.svg">
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-facebook.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-youtube.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-twitter.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-pinterest.svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/icon-instagram.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>

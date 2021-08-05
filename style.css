@@ -1,7 +1,3 @@
-/* outline style for testing purposes */
-*{
-    outline: 1px solid #f00 !important;
-}
 /* Home Page Styles */
 body{    
     padding: 50px;
@@ -17,14 +13,13 @@ main{
 @media screen and (max-width: 1150px) {
     main{
         max-width: 80%;
-
     }
 }
 .fixed-header{
     position: sticky;
     top: 0px;
     background: #fff;
-    z-index: 999;
+    z-index: 9999;
     transition: color .4s,transform .4s,opacity .4s ease-in-out,-webkit-transform .4s;
     box-shadow: 0px 0px 50px #5d5c5c;
 }
@@ -102,7 +97,7 @@ nav ul li a:hover{
         text-align: center;
         background-color: #fff;
         overflow: hidden;
-        transition: 0.5s ease;
+        transition: 1s ease;
     }
     .mobile-menu nav ul{
         display: block;
@@ -482,6 +477,9 @@ footer{
     footer{
         margin-top: -120px;
     }
+    .contact-us-footer{
+        margin-top: 0px;
+    }
 }
 .pre-footer{
     display: flex;
@@ -525,6 +523,12 @@ footer{
     background-color: #000;
     padding: 100px 0px;
 }
+
+@media screen and (max-width: 1150px){
+    .footer-end{
+        text-align: center;
+    }
+}
 @media screen and (max-width: 930px){
     .footer-end{
         padding: 100px 20px;
@@ -535,10 +539,8 @@ footer{
         padding: 250px 20px 50px;
         text-align: center;
     }
-}
-@media screen and (max-width: 1150px){
-    .footer-end{
-        text-align: center;
+    .footer-end.contact-us-footer-end{
+        padding: 50px 20px;
     }
 }
 .footer-end-content{
@@ -627,14 +629,44 @@ footer{
     align-items: center;
     margin-top: 50px;
 }
+@media screen and (max-width: 1150px){
+    .about-us-intro{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-intro{
+        margin: 30px -12.5% 0px;
+        border-radius: 0px;
+    }
+}
 .about-us-intro-text{
     padding: 80px;
+}
+@media screen and (max-width: 1150px){
+    .about-us-intro-text{
+        padding: 50px;
+    }
 }
 .about-us-intro-text h1{
     font-size: 50px;
 }
 .about-us-intro img{
     border-radius: 0px 15px 15px 0px;
+}
+@media screen and (max-width: 1150px){
+    .about-us-intro img{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-intro img{
+        border-radius: 0px;
+    }
 }
 .about-us-talent{
     margin-top: 150px;
@@ -644,8 +676,25 @@ footer{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 1150px){
+    .about-us-talent{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-talent{
+        margin: 150px -12.5% 0px;
+        border-radius: 0px;
+    }
+}
 .about-us-talent-text{
     padding: 80px;
+}
+@media screen and (max-width: 1150px){
+    .about-us-talent-text{
+        padding: 50px;
+    }
 }
 .about-us-talent-text h1{
     font-size: 40px;
@@ -654,13 +703,36 @@ footer{
 .about-us-talent img{
     border-radius: 15px 0px 0px 15px;
 }
+@media screen and (max-width: 1150px){
+    .about-us-talent img{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-talent img{
+        border-radius: 0px;
+    }
+}
 .about-us-locations{
     margin-top: 150px;
     display: flex;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 980px){
+    .about-us-locations{
+        flex-direction: column;
+    }
+}
 .about-us-location{
     text-align: center;
+}
+@media screen and (max-width: 980px){
+    .about-us-location{
+        margin: 30px auto;
+    }
 }
 .about-us-location h3{
     letter-spacing: 5px;
@@ -692,8 +764,25 @@ footer{
     justify-content: center;
     align-items: center; 
 }
+@media screen and (max-width: 1150px){
+    .about-us-real-deal{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-real-deal{
+        margin: 150px -12.5% 0px;
+        border-radius: 0px;
+    }
+}
 .about-us-real-deal-text{
     padding: 80px;
+}
+@media screen and (max-width: 1150px){
+    .about-us-real-deal-text{
+        padding: 50px;
+    }
 }
 .about-us-real-deal h1{
     font-size: 40px;
@@ -701,6 +790,19 @@ footer{
 }
 .about-us-real-deal img{
     border-radius: 0px 15px 15px 0px;
+}
+@media screen and (max-width: 1150px){
+    .about-us-real-deal img{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 767px){
+    .about-us-real-deal img{
+        border-radius: 0px;
+    }
 }
 
 /* End of About Us Page Styles */
@@ -714,6 +816,19 @@ footer{
     justify-content: space-between;
     margin-top: 50px;
 }
+@media screen and (max-width: 1150px){
+    .contact-us-intro{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px){
+    .contact-us-intro{
+        margin: 30px -12.5% 0px;
+        border-radius: 0px;
+        text-align: center;
+        padding: 50px 20px;
+    }
+}
 .contact-us-intro h1{
     font-size: 50px;
 }
@@ -723,9 +838,19 @@ footer{
     justify-content: space-between;
     width: 40%;
 }
+@media screen and (max-width: 1150px){
+    .contact-us-intro form{
+        width: 100%;
+    }
+}
 .contact-us-intro-text{
     width: 50%;
     color: #fff;
+}
+@media screen and (max-width: 1150px){
+    .contact-us-intro-text{
+        width: 100%;
+    }
 }
 .contact-us-intro form input, .contact-us-intro form textarea{
     display: block;
@@ -736,6 +861,11 @@ footer{
     border-bottom: 2px solid;
     padding: 20px;
     font-family: Jost, 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 1150px){
+    .contact-us-intro form input, .contact-us-intro form textarea{
+        width: auto;
+    }
 }
 .contact-us-intro form textarea{
     padding: 50px 20px;
@@ -767,6 +897,12 @@ footer{
     color: #fff;
     background: #ffad9b;
 }
+@media screen and (max-width: 767px){
+    .contact-us-intro form input[type="submit"]{
+        margin: 30px auto 0px;
+        width: 50%;
+    }
+}
 /* End of Contact Us Page Styles*/
 
 /*  Locations Page Styles*/
@@ -774,7 +910,14 @@ footer{
     display: flex;
     margin-top: 30px;
 }
-
+@media screen and (max-width: 1150px){
+    .locations-section{
+        flex-direction: column;
+    }
+    .locations-section:first-child, .locations-section:last-child{
+        flex-direction: column-reverse;
+    }
+}
 .locations-section img{
     border-radius: 15px;
 }
@@ -785,9 +928,33 @@ footer{
     width: 70%;
     border-radius: 15px;
 }
+@media screen and (max-width: 1150px){
+    .locations-text{
+        width: auto;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+    .locations-text{
+        margin: 0 -12.5%;
+        text-align: center;
+        border-radius: 0px;
+    }
+}
 .locations-text:nth-child(2){
     margin-right: 0px;
     margin-left: 30px;
+}
+@media screen and (max-width: 1150px){
+    .locations-text:nth-child(2){
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 767px){
+    .locations-text:nth-child(2){
+        margin: 0 -12.5%;
+    }
 }
 .locations-text h1{
     font-size: 40px;
@@ -796,11 +963,41 @@ footer{
 .locations-text-info{
     display: flex;
 }
+@media screen and (max-width: 767px){
+    .locations-text-info{
+        flex-direction: column;
+    }
+}
 .locations-text-info-address{
     margin-right: 80px;
 }
+@media screen and (max-width: 767px){
+    .locations-text-info-address{
+        margin-right: 0px;
+    }
+}
 .locations-text-info-label{
     font-weight: bold;
+}
+#canada-map, #australia-map, #uk-map { 
+    width: 50%; 
+    border-radius: 15px;
+}
+@media screen and (max-width: 1150px){
+    #canada-map, #australia-map, #uk-map {
+        width: 100%;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 767px){
+    #canada-map, #australia-map, #uk-map {
+        width: auto;
+        margin: 0 -12.5%;
+        border-radius: 0px;
+    }
+}
+.leaflet-bottom.leaflet-right{
+    display: none;
 }
 /* End of Locations Us Page Styles*/
 
