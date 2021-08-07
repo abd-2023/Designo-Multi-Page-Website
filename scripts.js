@@ -25,6 +25,18 @@ function closeMobileMenu() {
 }
 //end of code for menu
 
+//code for getting height of other project links
+/*
+if (window.matchMedia("(max-width: 1150px)").matches) {
+  console.log("Window is 1150px");
+  var text = document.querySelector(".other-project-link:not(.web-design)").innerText;
+  var heightOfOtherProjects = document.querySelector(".other-project-link:not(.web-design)").offsetHeight; //clientHeight
+  console.log( "height of other project ", heightOfOtherProjects, text);
+  document.querySelector(".other-project-link.web-design").offsetHeight = heightOfOtherProjects;
+
+}
+*/
+
 //code for displaying maps in contact us page
 var mapLocations = {
   canada: {
@@ -65,5 +77,4 @@ for (let i in mapLocations) {
   }).addTo(mymap);
 }
 //end of code for maps
-
 

@@ -98,6 +98,7 @@ nav ul li a:hover{
         background-color: #fff;
         overflow: hidden;
         transition: 1s ease;
+        z-index: 9999;
     }
     .mobile-menu nav ul{
         display: block;
@@ -109,7 +110,6 @@ nav ul li a:hover{
     }
     .mobile-menu .close-menu{
         position: absolute;
-        /* left: 0px; */
         right: 20px;
         top: 20px;
     }
@@ -186,7 +186,6 @@ button:hover{
 }
 @media screen and (max-width: 1150px){
     .intro-section #intro-mobile-image{
-        /* position: static; */
         right: 0px;
         display: flex;
         align-items: center;
@@ -216,7 +215,7 @@ button:hover{
     margin-top: 150px;
     display: flex;
 }
-/* @media screen and (max-width: 767px) { */
+
 @media screen and (max-width: 1150px) {
     .home-portfolio-projects{
         margin-top: 100px;
@@ -232,7 +231,7 @@ button:hover{
     position: relative;
     margin-right: 25px;
 }
-/* @media screen and (max-width: 767px){ */
+
 @media screen and (max-width: 1150px) {
     .web-design-portfolio-projects{
         margin-right: 0px;
@@ -245,50 +244,34 @@ button:hover{
     border-radius: 15px;
     display: block;
 }
-/* @media screen and (max-width: 767px){ */
+
 @media screen and (max-width: 1150px) {
-    .web-design-portfolio-projects img{
+    .web-design-portfolio-projects img:not(.projects-right-arrow){
         height: 100%;
     }
 }
 .web-design-portfolio-projects h1{
-    position: absolute;
-    /* top: 40%;
-    left: 25%; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
     color: #fff;
     font-size: 40px;
     font-weight: 500;
 }
-/* @media screen and (max-width: 767px){ */
 @media screen and (max-width: 1150px) {
     .web-design-portfolio-projects h1{
         font-size: 25px;
         width: 100%;
         text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
     }
 }
 .web-design-portfolio-projects a{
-    position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: #fff;
     letter-spacing: 5px;
     font-weight: 500;
 }
-/* @media screen and (max-width: 767px){ */
 @media screen and (max-width: 1150px) {
     .web-design-portfolio-projects a{
         text-align: center;
         width: 100%;
-        top: 70%;
-        left: 50%;
         font-size: 12px;
     }
 }
@@ -302,24 +285,22 @@ button:hover{
 .projects-overlay{
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
+    top: 0px;
     width: 100%;
     height: 100%;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
     transition: background-color 0.7s;
 }
-/* @media screen and (max-width: 767px){
-    .projects-overlay{
-        width: 100%;
-    }
-} */
 .web-design-portfolio-projects:hover .projects-overlay{
     background-color: hsla(11deg, 73%, 66%, 0.5);
 }
 .app-design-portfolio-projects, .graphic-design-portfolio-projects{
     position: relative;
 }
-/* @media screen and (max-width: 767px){ */
 @media screen and (max-width: 1150px) {
     .app-design-portfolio-projects, .graphic-design-portfolio-projects{
         height: 200px;
@@ -329,61 +310,38 @@ button:hover{
     border-radius: 15px;
     display: block;
 }
-/* @media screen and (max-width: 767px){ */
-@media screen and (max-width: 1150px) {
-    .app-design-portfolio-projects img, .graphic-design-portfolio-projects img{
-        height: 100%;
-    }
-}
 @media screen and (min-width: 1150px) {
     .app-design-portfolio-projects img:not(.projects-right-arrow), .graphic-design-portfolio-projects img:not(.projects-right-arrow){
         width: 100%;
         height: 308px;
     }
 }
+@media screen and (max-width: 1150px) {
+    .app-design-portfolio-projects img:not(.projects-right-arrow), .graphic-design-portfolio-projects img:not(.projects-right-arrow){
+        height: 100%;
+    }
+}
 .app-design-portfolio-projects h1, .graphic-design-portfolio-projects h1{
-    position: absolute;
-    top: 30%;
-    left: 30%;
     color: #fff;
     font-size: 40px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
-/* @media screen and (max-width: 767px){ */
 @media screen and (max-width: 1150px) {
     .app-design-portfolio-projects h1, .graphic-design-portfolio-projects h1{
         font-size: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -100%);
         width: 100%;
         text-align: center;
     }
 }
-.graphic-design-portfolio-projects h1{
-    left: 20%;
-}
-/* @media screen and (max-width: 767px){ */
-@media screen and (max-width: 1150px) {
-    .graphic-design-portfolio-projects h1{
-        left: 50%;
-    }
-}
 .app-design-portfolio-projects a, .graphic-design-portfolio-projects a{
-    position: absolute;
-    top: 60%;
-    left: 35%;
     color: #fff;
     letter-spacing: 5px;
     font-weight: 500;
 }
-/* @media screen and (max-width: 767px){ */
 @media screen and (max-width: 1150px) {
     .app-design-portfolio-projects a, .graphic-design-portfolio-projects a{
         font-size: 12px;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -100%);
         width: 100%;
         text-align: center;
     }
@@ -437,7 +395,6 @@ button:hover{
     position: absolute;
     width: 100%;
     height: 200%;
-    /* left: 85px; */
     top: -60px;
     transform: rotate(180deg);
     z-index: -999;
@@ -492,7 +449,6 @@ footer{
     justify-content: space-between;
     position: relative;
     top: 50px;
-    /* z-index: 999; */
     margin: 0 auto;
     max-width: 1090px;
     box-sizing: border-box;
@@ -1012,35 +968,70 @@ footer{
     padding: 30px 0px;
     margin-top: 50px;
 }
+@media screen and (max-width: 767px){
+    .project-design-intro{
+        margin: 30px -12.5% 0px;
+        border-radius: 0px;
+    }
+}
 .project-design-intro h1{
     font-size: 45px;
 }
 .all-projects{
     display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-between; */
-    /* align-items: space-between; */
     flex-wrap: wrap;
-    margin-top: 150px;
+    margin-top: 100px;
     gap: 33px;
+}
+@media screen and (max-width: 1150px){
+    .all-projects{
+        flex-direction: column;
+    }
 }
 .all-projects .single-project{
     width: 31.3%;
     text-align: center;
     background-color: #fdf3f0;
     border-radius: 15px;
+    overflow: hidden;
     transition: background-color 0.3s;
 }
 .all-projects .single-project:hover{
     background-color: #e7816b;
     cursor: pointer;
 }
+@media screen and (max-width: 1150px){
+    .all-projects .single-project{
+        width: 100%;
+        display: flex;
+    }
+}
+@media screen and (max-width: 767px){
+    .all-projects .single-project{
+        flex-direction: column;
+    }
+}
 .all-projects .single-project:hover h3, .all-projects .single-project:hover p{
     color: #fff;
 }
 .all-projects .single-project img{
     width: 100%;
-    border-radius: 15px 15px 0px 0px;
+}
+@media screen and (max-width: 1150px){
+    .all-projects .single-project img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 767px){
+    .all-projects .single-project img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1150px){
+    .single-project-text{
+        width: 100%;
+        align-self: center;
+    }
 }
 .all-projects .single-project h3{
     color: #e7816b;
@@ -1053,23 +1044,40 @@ footer{
 .other-projects-section{
     margin-top: 150px;
     display: flex;
-    /* justify-content: space-between; */
     gap: 30px;
+}
+@media screen and (max-width: 1150px){
+    .other-projects-section{
+        flex-direction: column;
+    }
 }
 .other-project-link{
     position: relative;
+    overflow: hidden;
+    border-radius: 15px;
 }
 .other-project-link.web-design{
     height: 308px;
-    overflow: hidden;
     border-radius: 15px;
+}
+@media screen and (max-width: 1150px){
+    .other-project-link, .other-project-link.web-design{
+        height: 15rem;
+    }
 }
 .other-project-link:hover{
     cursor: pointer;
 }
-.other-project-link img{
+.other-project-link img:not(a img){
     border-radius: 15px;
     display: block;
+}
+@media screen and (max-width: 1150px){
+    .other-project-link img:not(a img){
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 .other-project-link .other-projects-overlay{
     background-color: rgba(0, 0, 0, 0.4);
@@ -1077,6 +1085,10 @@ footer{
     top: 0px;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     border-radius: 15px;
     transition: background-color 0.7s;
@@ -1085,23 +1097,21 @@ footer{
     background-color: hsla(11deg, 73%, 66%, 0.5);
 }
 .other-project-link .other-projects-overlay h1{
-    position: absolute;
     font-size: 40px;
-    top: 30%;
-    left: 25%;
     letter-spacing: 3px;
+    margin-bottom: 10px;
 }
-.other-project-link .other-projects-overlay.graphic-design h1{
-    position: absolute;
-    font-size: 40px;
-    top: 30%;
-    left: 15%;
-    letter-spacing: 3px;
+@media screen and (max-width: 767px){
+    .other-project-link .other-projects-overlay h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px){
+    .other-project-link .other-projects-overlay h1{
+        font-size: 25px;
+    }
 }
 .other-project-link .other-projects-overlay a{
-    position: absolute;
-    top: 60%;
-    left: 30%;
     font-weight: 500;
     letter-spacing: 5px;
 }

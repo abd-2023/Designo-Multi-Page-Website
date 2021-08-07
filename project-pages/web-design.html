@@ -28,6 +28,17 @@
                     <li> <a href="../contact-us.html"> CONTACT </a> </li>
                 </ul>
             </nav>
+            <img src="../images/hamburger-open-menu.png" class="hamburger-menu" width="30px" onclick="openMobileMenu()">
+        </div>
+        <div class="mobile-menu">
+            <img src="../images/close-menu.png" class="close-menu" width="30px" onclick="closeMobileMenu()">
+            <nav>
+                <ul>
+                    <li> <a href="../about-us.html"> OUR COMPANY </a> </li>
+                    <li> <a href="../locations.html"> LOCATIONS </a> </li>
+                    <li> <a href="../contact-us.html"> CONTACT </a> </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -43,63 +54,75 @@
         <section class="all-projects">
             <div class="single-project">
                 <img src="../images/image-express.jpg">
-                <h3>
-                    EXPRESS
-                </h3>
-                <p>
-                    A multi-carrier shipping website for <br />
-                    ecommerce businesses
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        EXPRESS
+                    </h3>
+                    <p>
+                        A multi-carrier shipping website for <br />
+                        ecommerce businesses
+                    </p>
+                </div>
             </div>
             <div class="single-project">
                 <img src="../images/image-transfer.jpg">
-                <h3>
-                    TRANSFER
-                </h3>
-                <p>
-                    Site for low-cost money transfers and <br />
-                    sending money within seconds
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        TRANSFER
+                    </h3>
+                    <p>
+                        Site for low-cost money transfers and <br />
+                        sending money within seconds
+                    </p>
+                </div>
             </div>
             <div class="single-project">
                 <img src="../images/image-photon.jpg">
-                <h3>
-                    PHOTON
-                </h3>
-                <p>
-                    A state-of-the-art music player with <br />
-                    high-resolution audio and DSP effects
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        PHOTON
+                    </h3>
+                    <p>
+                        A state-of-the-art music player with <br />
+                        high-resolution audio and DSP effects
+                    </p>
+                </div>
             </div>
             <div class="single-project">
                 <img src="../images/image-builder.jpg">
-                <h3>
-                    BUILDER
-                </h3>
-                <p>
-                    Connects users with local contractors<br />
-                    based on their location
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        BUILDER
+                    </h3>
+                    <p>
+                        Connects users with local contractors<br />
+                        based on their location
+                    </p>
+                </div>
             </div>
             <div class="single-project">
                 <img src="../images/image-blogr.jpg">
-                <h3>
-                    BLOGR
-                </h3>
-                <p>
-                    Blogr is a platform for creating an online <br />
-                    blog or publication
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        BLOGR
+                    </h3>
+                    <p>
+                        Blogr is a platform for creating an online <br />
+                        blog or publication
+                    </p>
+                </div>
             </div>
             <div class="single-project">
                 <img src="../images/image-camp.jpg">
-                <h3>
-                    CAMP
-                </h3>
-                <p>
-                    Get expert training in coding, data,<br />
-                    design, and digital marketing
-                </p>
+                <div class="single-project-text">
+                    <h3>
+                        CAMP
+                    </h3>
+                    <p>
+                        Get expert training in coding, data,<br />
+                        design, and digital marketing
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -139,24 +162,25 @@
                 </p>
             </div>
             <div class="pre-footer-button">
-                <button class="home-page-buttons  onclick=" location.href='contact-us.html'" type=" button"">
+                <button class="home-page-buttons" onclick="location.href='../contact-us.html'" type=" button"">
                     GET IN TOUCH
                 </button>
             </div>
         </div>
         <div class="footer-end">
-            <div class="footer-logo-nav">
-                <div class="logo">
-                    <img src="../images/logo-light.png" width="200">
+            <div class="footer-end-content">
+                <div class="footer-logo-nav">
+                    <div class="logo">
+                        <img src="../images/logo-light.png" width="200">
+                    </div>
+                    <nav>
+                        <ul class="footer-menu">
+                            <li> <a href="../about-us.html"> OUR COMPANY </a> </li>
+                            <li> <a href="../locations.html"> LOCATIONS </a> </li>
+                            <li> <a href="../contact-us.html"> CONTACT </a> </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="footer-menu">
-                        <li> <a href="../about-us.html"> OUR COMPANY </a> </li>
-                        <li> <a href="../locations.html"> LOCATIONS </a> </li>
-                        <li> <a href="../contact-us.html"> CONTACT </a> </li>
-                    </ul>
-                </nav>
-            </div>
             <div class="footer-info">
                 <div class="footer-address">
                     <p>
@@ -201,6 +225,7 @@
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </footer>
     <script src="../scripts.js"></script>
